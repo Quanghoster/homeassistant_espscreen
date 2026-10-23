@@ -92,20 +92,14 @@ i2c:
   frequency: 400kHz
 
 # Backlight control — GPIO5, active high (verified on working hardware).
-# Using simple GPIO output for initial testing. Switch to LEDC for dimming once confirmed working.
+# features/backlight.yaml attaches to this output id.
 output:
-  - platform: gpio
+  - platform: ledc
     pin: GPIO5
-    id: gpio_backlight
-    inverted: false
-
-light:
-  - platform: monochromatic
-    output: gpio_backlight
-    id: back_light
-    internal: true
-    restore_mode: ALWAYS_ON
-    default_transition_length: 0s
+    id: gpio_backlight_pwm
+    frequency: ${BACKLIGHT_FREQUENCY}
+    min_power: 0.01
+    zero_means_zero: true
 
 # Touch controller — FT63x6 (FT6336U family) on the dedicated touch I2C bus.
 touchscreen:
