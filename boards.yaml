@@ -262,3 +262,11 @@ waveshare43c:
   status: experimental
   # The 4.3's glass with Waveshare's CH32V003 expander in place of the CH422G (website discussion 10): a 4.3C built
   # from the 4.3's board file starts with its touch chip in reset.
+panlee-zx3d95ce01s:
+  file: panlee-zx3d95ce01s.yaml
+  name: Panlee
+  model: ZX3D95CE01S-TR-V12
+  status: experimental
+  # Panlee 3.95-inch 480x480 ESP32-S3 with GC9503V RGB display and FT6336U touch.
+  # Hardware details are unverified; init sequence derived from datasheet/community sources.
+
