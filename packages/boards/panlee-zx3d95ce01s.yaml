@@ -101,6 +101,20 @@ output:
     min_power: 0.01
     zero_means_zero: true
 
+# Onboard HTU21D / SHT21 temperature and humidity sensor.
+# Assumed to be on the same I2C bus as the touch controller (GPIO15/6).
+sensor:
+  - platform: htu21d
+    model: sht21
+    temperature:
+      name: "Temperature"
+      id: air_temperature
+    humidity:
+      name: "Humidity"
+      id: relative_humidity
+    heater:
+      name: "Heater"
+
 # Touch controller — FT63x6 (FT6336U family) on the dedicated touch I2C bus.
 touchscreen:
   - platform: ft63x6
