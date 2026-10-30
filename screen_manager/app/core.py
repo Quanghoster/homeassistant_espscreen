@@ -109,7 +109,7 @@ REF = 'main'
 # spelling of the URL) has no channel: new screens build from main, existing ones keep the `ref:` they have. Without a
 # Supervisor (Docker, docs/DOCKER.md) SCREEN_CHANNEL names it, which the image GitHub builds from dev carries
 # (.github/workflows/docker.yml); unset, there is none.
-CHANNELS = {'ec8ae0ed': 'main', 'fa6a7b50': 'dev'}
+CHANNELS = {'ec8ae0ed': 'main', 'fa6a7b50': 'dev', 'eb73b9da': 'main'}
 CHANNEL = None
 
 def channel_of(slug):
