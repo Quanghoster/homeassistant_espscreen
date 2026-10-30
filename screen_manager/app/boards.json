@@ -1766,7 +1766,7 @@
   "dimmable": true,
   "dpi": 172,
   "features": [],
-  "firmware": "0.58.0",
+  "firmware": "0.59.0",
   "fonts": {
    "headline": 27,
    "icon": 42,
@@ -7568,7 +7568,7 @@
   "dimmable": true,
   "dpi": 172,
   "features": [],
-  "firmware": "0.58.0",
+  "firmware": "0.59.0",
   "fonts": {
    "headline": 27,
    "icon": 42,
@@ -9904,7 +9904,7 @@
   "dimmable": true,
   "dpi": 172,
   "features": [],
-  "firmware": "0.58.0",
+  "firmware": "0.59.0",
   "fonts": {
    "headline": 27,
    "icon": 42,
